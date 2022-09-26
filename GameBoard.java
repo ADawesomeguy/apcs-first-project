@@ -3,13 +3,11 @@ public class GameBoard {
   private int width;
   private Tile[][] grid;
   private Location loc;
-  private Player player;
 
-  public GameBoard(int width, int height) {
+  public GameBoard(int width, int height, Player player) {
     this.height = height;
     this.width = width;
     this.loc = new Location();
-    this.player = new Player();
     grid = new Tile[height][width];
     for (int y = 0; y < height; y++) {
       for (int x = 0; x < width; x++) {
