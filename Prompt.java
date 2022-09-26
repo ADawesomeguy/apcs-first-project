@@ -18,7 +18,8 @@ public class Prompt {
       case "1":
         System.out.println("Which direction would you like to move?");
         ArrayList<String> directions = new ArrayList<String>();
-        
+
+        directions.add("")
         
         String moveChoice = IO.getStringInput(this.scanner, /*new String[] {"1", "2", "3", "4"}*/);
         break;
