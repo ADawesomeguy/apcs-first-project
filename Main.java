@@ -15,9 +15,9 @@ public class Main {
 
       """, 300
     );
-      Thread.sleep(5000);
-    } catch (Exception e) {
-      System.out.println(e);
+    
+    if () {
+
     }
     
     //accesses files
