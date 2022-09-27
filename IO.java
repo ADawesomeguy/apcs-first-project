@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class IO {
+  //Creates scroll text;
   private static final int cps = 30;
   public static void scrollPrint(String text) throws InterruptedException {
     for (char c : text.toCharArray()) {
@@ -9,6 +10,13 @@ public class IO {
     }
   }
 
+    public static void scrollPrint(String text, int cps) throws InterruptedException {
+    for (char c : text.toCharArray()) {
+      System.out.print(c);
+      Thread.sleep(1000 / cps);
+    }
+  }
+    //evalutates input received and checks if its valid
   public static String getStringInput(Scanner s, String[] choices) {
     boolean isInChoices = false;
     while (!isInChoices) {
